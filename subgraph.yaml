@@ -6,7 +6,7 @@ dataSources:
     name: NewbieTask
     network: match
     source:
-      address: "0xEE856092639e6fE0F2191142a4dE8a1d8e46806E"
+      address: "0x0Ac4CE86Ae106b613eC63d14c28E1ec18f6bbEF7"
       abi: NewbieTask
       startBlock: 6338387
     mapping:
