@@ -6,9 +6,9 @@ dataSources:
     name: NewbieTask
     network: match
     source:
-      address: "0x8086B7B9Cb504aA559A635620B87317768A49a1E"
+      address: "0xEE856092639e6fE0F2191142a4dE8a1d8e46806E"
       abi: NewbieTask
-      startBlock: 6320115
+      startBlock: 6338387
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
