@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: NewbieTask
+    network: match
+    source:
+      address: "0x8086B7B9Cb504aA559A635620B87317768A49a1E"
+      abi: NewbieTask
+      startBlock: 6320115
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - NewbieTask
+      abis:
+        - name: NewbieTask
+          file: NewbieTask/abis/NewbieTask.json
+      eventHandlers:
+        - event: ClaimRecord(uint256,address,uint256,uint256,uint256)
+          handler: handleClaimRecordLog
+      file: NewbieTask/NewbieTask.wasm

@@ -1,0 +1,9 @@
+
+type NewbieTask  @entity {
+    id: ID!
+    tid: BigInt!
+    user: Bytes!
+    claimType: BigInt!
+    amount: BigInt!
+    ctime: BigInt!
+}
