@@ -19,7 +19,7 @@ services:
       postgres_pass: let-me-in
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
-      ethereum: 'mumbai:https://rpc-mumbai.maticvigil.com/'
+      ethereum: 'match:https://testnet-rpc.d2ao.com'
       GRAPH_LOG: info
   ipfs:
     image: ipfs/kubo:v0.14.0

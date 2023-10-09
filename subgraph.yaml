@@ -4,7 +4,8 @@ schema:
 dataSources:
   - kind: ethereum
     name: NewbieTask
-    network: match
+#    network: match
+    network: mumbai
     source:
       address: "0x0Ac4CE86Ae106b613eC63d14c28E1ec18f6bbEF7"
       abi: NewbieTask
