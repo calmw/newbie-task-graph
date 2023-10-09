@@ -4,6 +4,8 @@
   "scripts": {
     "codegen": "graph codegen",
     "build-dev": "graph codegen && graph build",
+    "build": "graph build",
+    "deploy-local": "graph deploy graphprotocol/into-newbie-task --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020/",
     "remove-local": "graph remove --node http://localhost:8920/ into-newbie-task",
     "create-match-test": "graph create --node http://101.32.194.111:8920/ into-newbie-task",
     "deploy-match-test": "graph deploy --node http://101.32.194.111:8920/ --ipfs http://101.32.194.111:5001 into-newbie-task"
