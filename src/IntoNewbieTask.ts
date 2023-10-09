@@ -1,18 +1,24 @@
 import {ClaimRecord as ClaimRecordEvent} from "../generated/NewbieTask/NewbieTask"
 import {NewbieTask} from "../generated/schema"
+import {Address, BigInt, Bytes} from "@graphprotocol/graph-ts";
 
 
 export function handleClaimRecordLog(event: ClaimRecordEvent): void {
+    let newbieTask = new NewbieTask(createEventID(event.block.number, event.logIndex))
+    newbieTask.tid = event.params.tid
+    newbieTask.user = event.params.user
+    newbieTask.claimType = event.params.claimType
+    newbieTask.amount = event.params.amount
+    newbieTask.ctime = event.params.ctime
+    newbieTask.save()
+}
 
-    let t_id = event.params.tid.toString()
-    let packageObj = NewbieTask.load(t_id)
-    if (packageObj == null) {
-        packageObj = new NewbieTask(t_id)
-    }
-    packageObj.user = event.params.user
-    packageObj.claimType = event.params.claimType
-    packageObj.amount = event.params.amount
-    packageObj.ctime = event.params.ctime
-    packageObj.save()
+
+function createEventID(blockNumber: BigInt, logIndex: BigInt): string {
+    return blockNumber.toString().concat('-').concat(logIndex.toString())
+}
+
+function createResolverID(node: Bytes, resolver: Address): string {
+    return resolver.toHexString().concat('-').concat(node.toHexString())
 }
 
