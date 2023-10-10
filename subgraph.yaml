@@ -7,7 +7,7 @@ dataSources:
 #    network: match_main
     network: match_test
     source:
-      address: "0x9db901803613327A5Ff20fc07860430e5b12F074"
+      address: "0xB7a38562cEd5098d4f399dbC0533AbC14ccC3413"
       abi: NewbieTask
       startBlock: 9836692
     mapping:
