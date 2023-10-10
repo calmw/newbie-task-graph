@@ -9,7 +9,7 @@ dataSources:
     source:
       address: "0xB7a38562cEd5098d4f399dbC0533AbC14ccC3413"
       abi: NewbieTask
-      startBlock: 9836692
+      startBlock: 6311643
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
