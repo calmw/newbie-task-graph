@@ -1,18 +1,19 @@
 import {ClaimRecord as ClaimRecordEvent} from "../generated/NewbieTask/NewbieTask"
-import {NewbieTask} from "../generated/schema"
+import {ClaimRecord} from "../generated/schema"
 import {Address, BigInt, Bytes} from "@graphprotocol/graph-ts";
 
+// 这里面可以写多个handler
 
 export function handleClaimRecordLog(event: ClaimRecordEvent): void {
-    let newbieTask = new NewbieTask(createEventID(event.block.number, event.logIndex))
+    let claimRecord = new ClaimRecord(createEventID(event.block.number, event.logIndex))
     // let newbieTask = new NewbieTask(event.params.tid.toString())
-    newbieTask.tid = event.params.tid
-    newbieTask.user = event.params.user
-    newbieTask.claimType = event.params.claimType
-    newbieTask.amount = event.params.amount
-    newbieTask.txHash = event.transaction.hash
-    newbieTask.ctime = event.params.ctime
-    newbieTask.save()
+    claimRecord.tid = event.params.tid
+    claimRecord.user = event.params.user
+    claimRecord.claimType = event.params.claimType
+    claimRecord.amount = event.params.amount
+    claimRecord.txHash = event.transaction.hash
+    claimRecord.ctime = event.params.ctime
+    claimRecord.save()
 }
 
 

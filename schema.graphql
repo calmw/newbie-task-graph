@@ -1,4 +1,4 @@
-type NewbieTask  @entity {
+type ClaimRecord  @entity {
     id: ID!
     tid: BigInt!
     user: Bytes!
