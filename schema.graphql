@@ -4,5 +4,6 @@ type NewbieTask  @entity {
     user: Bytes!
     claimType: BigInt!
     amount: BigInt!
+    txHash: Bytes!
     ctime: BigInt!
 }

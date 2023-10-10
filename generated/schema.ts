@@ -102,6 +102,19 @@ export class NewbieTask extends Entity {
     this.set("amount", Value.fromBigInt(value));
   }
 
+  get txHash(): Bytes {
+    let value = this.get("txHash");
+    if (!value || value.kind == ValueKind.NULL) {
+      throw new Error("Cannot return null for a required field.");
+    } else {
+      return value.toBytes();
+    }
+  }
+
+  set txHash(value: Bytes) {
+    this.set("txHash", Value.fromBytes(value));
+  }
+
   get ctime(): BigInt {
     let value = this.get("ctime");
     if (!value || value.kind == ValueKind.NULL) {

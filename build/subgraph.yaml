@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: NewbieTask
-    network: match
+    network: goerli
     source:
-      address: "0x8086B7B9Cb504aA559A635620B87317768A49a1E"
+      address: "0x9db901803613327A5Ff20fc07860430e5b12F074"
       abi: NewbieTask
-      startBlock: 6320115
+      startBlock: 9836692
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
