@@ -16,7 +16,7 @@ services:
     environment:
       postgres_host: postgres
       postgres_user: graph-node
-      postgres_pass: let-me-in_match_main_graph
+      postgres_pass: let_me_in_match_main_graph
       postgres_db: graph-node
       ipfs: 'ipfs:6001'
       ethereum: 'match_main:https://rpc-7.matchscan.io/'
@@ -39,7 +39,7 @@ services:
       ]
     environment:
       POSTGRES_USER: graph-node
-      POSTGRES_PASSWORD: let-me-in_match_main_graph
+      POSTGRES_PASSWORD: let_me_in_match_main_graph
       POSTGRES_DB: graph-node
       # FIXME: remove this env. var. which we shouldn't need. Introduced by
       # <https://github.com/graphprotocol/graph-node/pull/3511>, maybe as a
