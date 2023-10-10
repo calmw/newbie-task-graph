@@ -16,7 +16,7 @@ services:
     environment:
       postgres_host: postgres
       postgres_user: graph-node
-      postgres_pass: let-me-in
+      postgres_pass: let-me-in_match_main_graph
       postgres_db: graph-node
       ipfs: 'ipfs:6001'
       ethereum: 'match_main:https://rpc-7.matchscan.io/'
