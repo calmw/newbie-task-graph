@@ -4,7 +4,7 @@ schema:
 dataSources:
   - kind: ethereum
     name: NewbieTask
-    network: matchMain
+    network: match_mainnet
 #    network: match_test
     source:
       address: "0x48f16631FD681Fe65A97dA8e9Cc7abE9Bf4210eE"
