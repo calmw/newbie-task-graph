@@ -42,9 +42,6 @@ services:
       POSTGRES_USER: graph-node
       POSTGRES_PASSWORD: let_me_in_match_main_graph
       POSTGRES_DB: graph-node
-      # FIXME: remove this env. var. which we shouldn't need. Introduced by
-      # <https://github.com/graphprotocol/graph-node/pull/3511>, maybe as a
-      # workaround for https://github.com/docker/for-mac/issues/6270?
       PGDATA: "/var/lib/postgresql/data"
       POSTGRES_INITDB_ARGS: "-E UTF8 --locale=C"
     volumes:
