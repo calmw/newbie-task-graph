@@ -6,7 +6,6 @@ import {Address, BigInt, Bytes} from "@graphprotocol/graph-ts";
 
 export function handleClaimRecordLog(event: ClaimRecordEvent): void {
     let claimRecord = new ClaimRecord(createEventID(event.block.number, event.logIndex))
-    // let newbieTask = new NewbieTask(event.params.tid.toString())
     claimRecord.tid = event.params.tid
     claimRecord.user = event.params.user
     claimRecord.claimType = event.params.claimType
