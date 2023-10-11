@@ -11,21 +11,16 @@ services:
     depends_on:
       - postgres
     extra_hosts:
-      - host.docker.internal:host-gateway
+      - host.docker.internal:127.0.0.1
     environment:
       postgres_host: postgres
       postgres_user: graph-node
       postgres_pass: let_me_in_match_main_graph
       postgres_db: graph-node
-      ipfs: '127.0.0.1:5001'
+      ipfs: 'ipfs:5001'
       ethereum: 'match_main:https://rpc-7.matchscan.io/'
       GRAPH_LOG: info
-#  ipfs:
-#    image: ipfs/kubo:v0.14.0
-#    ports:
-#      - '9001:5001'
-#    volumes:
-#      - ./data/ipfs:/data/ipfs
+
   postgres:
     image: postgres:14
     ports:
