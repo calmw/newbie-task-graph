@@ -22,8 +22,6 @@ services:
       ipfs: '172.27.0.1:5001'
       ethereum: 'match_main:https://rpc-7.matchscan.io/'
       GRAPH_LOG: info
-    networks:
-      - docker_testnet_default
 #  ipfs:
 #    image: ipfs/kubo:v0.14.0
 #    ports:
