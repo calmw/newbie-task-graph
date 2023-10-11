@@ -7,7 +7,7 @@
     "deploy-dev": "graph deploy into-newbie-task --ipfs http://localhost:5001 --node http://127.0.0.1:8020/",
     "remove-dev": "graph remove into-newbie-task --node http://localhost:8020/",
     "create-main": "graph create into-newbie-task --node http://127.0.0.1:6020",
-    "deploy-main": "graph deploy into-newbie-task --ipfs http://localhost:6001 --node http://127.0.0.1:6020/",
+    "deploy-main": "graph deploy into-newbie-task --ipfs http://172.27.0.1:5001 --node http://127.0.0.1:6020/",
     "remove-main": "graph remove into-newbie-task --node http://localhost:6020/"
   },
   "dependencies": {
