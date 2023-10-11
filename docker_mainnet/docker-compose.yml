@@ -9,6 +9,7 @@ services:
       - '6030:8030'
       - '6040:8040'
     depends_on:
+      - ipfs
       - postgres
     extra_hosts:
       - host.docker.internal:host-gateway
