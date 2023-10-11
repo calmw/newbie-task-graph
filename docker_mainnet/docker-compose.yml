@@ -18,13 +18,13 @@ services:
       postgres_user: graph-node
       postgres_pass: let_me_in_match_main_graph
       postgres_db: graph-node
-      ipfs: 'ipfs:7001'
+      ipfs: 'ipfs:9001'
       ethereum: 'match_main:https://rpc-7.matchscan.io/'
       GRAPH_LOG: info
   ipfs:
     image: ipfs/kubo:v0.14.0
     ports:
-      - '7001:5001'
+      - '9001:5001'
     volumes:
       - ./data/ipfs:/data/ipfs
   postgres:
