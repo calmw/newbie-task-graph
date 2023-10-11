@@ -18,7 +18,6 @@ services:
       postgres_user: graph-node
       postgres_pass: let_me_in_match_main_graph
       postgres_db: graph-node
-#      ipfs: '172.27.0.1:5001'
       ipfs: 'ipfs:5001'
       ethereum: 'match_mainnet:https://rpc-2.matchscan.io'
       GRAPH_LOG: info
