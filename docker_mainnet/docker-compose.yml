@@ -20,7 +20,7 @@ services:
       postgres_db: graph-node
 #      ipfs: 'ipfs:7001'
       ipfs: '172.27.0.1:5001'
-      ethereum: 'matchMain:https://rpc.matchscan.io/'
+      ethereum: 'matchMain:https://rpc-7.matchscan.io/'
       GRAPH_LOG: info
 #  ipfs:
 #    image: ipfs/kubo:v0.14.0
