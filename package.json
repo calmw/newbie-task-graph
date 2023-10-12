@@ -3,9 +3,9 @@
   "license": "MIT",
   "scripts": {
     "build": "graph codegen && graph build",
-    "create-dev": "graph create into-newbie-task --node http://127.0.0.1:8020",
-    "deploy-dev": "graph deploy into-newbie-task --ipfs http://localhost:5001 --node http://127.0.0.1:8020/",
-    "remove-dev": "graph remove into-newbie-task --node http://localhost:8020/",
+    "create-dev": "graph create into-newbie-task --node http://8.130.102.48:8020",
+    "deploy-dev": "graph deploy into-newbie-task --ipfs http://8.130.102.48:5001 --node http://8.130.102.48:8020/",
+    "remove-dev": "graph remove into-newbie-task --node http://8.130.102.48:8020/",
     "create-main": "graph create into-newbie-task-main --node http://8.130.102.48:7020",
     "deploy-main": "graph deploy into-newbie-task-main --ipfs http://8.130.102.48:9001 --node http://8.130.102.48:7020/",
     "remove-main": "graph remove into-newbie-task-main --node http://8.130.102.48:7020/"
